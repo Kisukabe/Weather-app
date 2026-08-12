@@ -5,7 +5,6 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115-green.svg)](https://fastapi.tiangolo.com/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.61-red.svg)](https://streamlit.io/)
 [![Docker Compose](https://img.shields.io/badge/Docker-Multi--Container-blue.svg)](https://www.docker.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 Hệ thống **MLOps Pipeline** hoàn chỉnh tự động thu thập dữ liệu thời tiết, trích xuất đặc trưng với **PySpark**, huấn luyện mô hình Machine Learning (**RandomForestRegressor**) để **hiệu chỉnh sai số dự báo nhiệt độ** (Bias Correction) tại khu vực **TP. Hồ Chí Minh**, và phục vụ người dùng thông qua kiến trúc **Decoupled Web (FastAPI Backend + Streamlit Frontend)**.
 
@@ -228,8 +227,3 @@ tests/test_api.py::test_get_pipeline_status PASSED                       [ 50%]
 tests/test_api.py::test_get_metrics PASSED                               [ 75%]
 tests/test_api.py::test_get_predictions PASSED                           [100%]
 ```
-
----
-
-## 📜 8. Giấy Phép (License)
-Dự án được phân phối dưới giấy phép [MIT License](LICENSE).
