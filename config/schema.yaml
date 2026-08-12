@@ -1,0 +1,8 @@
+COLUMNS:
+  date: string
+  temp_max: double
+  temp_min: double
+  temp_mean: double
+  precipitation: double
+  wind_speed: double
+  city: string

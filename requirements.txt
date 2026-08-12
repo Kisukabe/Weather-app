@@ -1,0 +1,21 @@
+# Big Data & Data Manipulation
+pyspark>=3.2.0
+pandas>=1.3.0
+numpy>=1.21.0
+
+# Data Visualization
+matplotlib>=3.4.0
+plotly>=5.0.0
+
+# Machine Learning
+scikit-learn>=1.0.0
+
+# Utilities & Config
+joblib>=1.1.0
+python-box
+ensure
+pyyaml>=6.0
+requests
+
+# Web UI
+streamlit>=1.10.0
