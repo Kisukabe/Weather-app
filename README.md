@@ -5,6 +5,7 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115-green.svg)](https://fastapi.tiangolo.com/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.61-red.svg)](https://streamlit.io/)
 [![Docker Compose](https://img.shields.io/badge/Docker-Multi--Container-blue.svg)](https://www.docker.com/)
+[![APScheduler](https://img.shields.io/badge/APScheduler-3.11-purple.svg)](https://apscheduler.readthedocs.io/)
 
 Hệ thống **MLOps Pipeline** hoàn chỉnh tự động thu thập dữ liệu thời tiết, trích xuất đặc trưng với **PySpark**, huấn luyện mô hình Machine Learning (**RandomForestRegressor**) để **hiệu chỉnh sai số dự báo nhiệt độ** (Bias Correction) tại khu vực **TP. Hồ Chí Minh**, và phục vụ người dùng thông qua kiến trúc **Decoupled Web (FastAPI Backend + Streamlit Frontend)**.
 
@@ -19,6 +20,7 @@ Dự báo thời tiết từ các dịch vụ toàn cầu (như Open-Meteo) thư
 2. **Xử lý dữ liệu lớn (Big Data)**: Sử dụng **PySpark DataFrame Engine** để tính toán Lag Features (1-3 ngày), Rolling Mean/Std (3d, 7d) và Seasonality (mùa trong năm).
 3. **Hiệu chỉnh sai số ML**: Huấn luyện mô hình `RandomForestRegressor` dự đoán mức độ sai biệt ($\Delta_{temp} = y_{actual} - y_{raw\_forecast}$) giúp làm giảm MAE/RMSE đáng kể.
 4. **Kiến trúc Web Tách biệt (Decoupled Architecture)**: Phục vụ API bất đồng bộ thông qua **FastAPI** và hiển thị biểu đồ tương tác trực quan trên **Streamlit**.
+5. **Lập lịch chạy tự động (APScheduler)**: Tích hợp `BackgroundScheduler` ngầm trong FastAPI tự động thực thi Pipeline mỗi ngày lúc **06:00 AM** mà không tiêu tốn tài nguyên dư thừa.
 
 ---
 
@@ -151,11 +153,11 @@ Weather/
 
 | Method | Endpoint | Mô tả |
 | :--- | :--- | :--- |
-| `GET` | `/health` | Kiểm tra sức khỏe dịch vụ Backend (Status 200 OK) |
+| `GET` | `/health` | Kiểm tra sức khỏe dịch vụ Backend & Trạng thái APScheduler (`schedule`, `next_run`) |
 | `GET` | `/api/v1/metrics` | Lấy các chỉ số đánh giá mô hình (MAE, RMSE, R²) |
 | `GET` | `/api/v1/predictions` | Lấy danh sách dự báo nhiệt độ đã hiệu chỉnh ML |
 | `POST` | `/api/v1/pipeline/run` | Kích hoạt chạy 6 Stage Pipeline ngầm (Background Task) |
-| `GET` | `/api/v1/pipeline/status` | Lấy trạng thái thực thi pipeline (`IDLE`, `RUNNING`, `SUCCESS`, `FAILED`) |
+| `GET` | `/api/v1/pipeline/status` | Lấy trạng thái thực thi pipeline (`IDLE`, `RUNNING`, `SUCCESS`, `FAILED`) và thông tin APScheduler |
 
 ---
 
