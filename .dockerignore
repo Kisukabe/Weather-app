@@ -1,0 +1,33 @@
+# Git
+.git/
+.gitignore
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+build/
+dist/
+
+# Artifacts & Logs
+artifacts/
+logs/
+
+# Mac OS metadata
+.DS_Store
+
+# IDE & Agents
+.vscode/
+.idea/
+.agents/
+
+# Temporary installers
+Miniforge3-MacOSX-arm64.sh
+
+# Environment & plan docs
+*.env
+implementation_plan.md
+walkthrough.md

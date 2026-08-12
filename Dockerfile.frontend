@@ -1,0 +1,20 @@
+# Frontend Dockerfile: Streamlit Web UI
+FROM python:3.10-slim
+
+WORKDIR /app
+
+# Sao chép và cài đặt dependencies cho Frontend
+COPY frontend/requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Sao chép mã nguồn Frontend
+COPY frontend/ ./frontend/
+
+# Mở cổng Streamlit Web UI
+EXPOSE 8501
+
+# Health check cho Streamlit UI
+HEALTHCHECK CMD curl --fail http://localhost:8501/_stcore/health || exit 1
+
+# Khởi chạy Streamlit Dashboard từ frontend/app.py
+CMD ["streamlit", "run", "frontend/app.py", "--server.port=8501", "--server.address=0.0.0.0", "--server.headless=true"]

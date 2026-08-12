@@ -1,0 +1,37 @@
+# Backend Dockerfile: Python 3.10 + Java 17 (PySpark) + FastAPI
+FROM python:3.10-slim
+
+# Cài đặt OpenJDK 17 & các utility cơ bản cho PySpark
+RUN apt-get update && apt-get install -y \
+    openjdk-17-jre-headless \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# Thiết lập biến môi trường Java
+ENV JAVA_HOME=/usr/lib/jvm/java-17-openjdk-arm64
+ENV PATH="$JAVA_HOME/bin:$PATH"
+ENV PYTHONPATH=/app
+
+WORKDIR /app
+
+# Sao chép và cài đặt dependencies cho Backend
+COPY backend/requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Sao chép toàn bộ mã nguồn
+COPY . .
+
+# Cài đặt package nội bộ
+RUN pip install -e .
+
+# Tạo thư mục lưu trữ artifacts và logs
+RUN mkdir -p artifacts logs
+
+# Mở cổng Backend REST API
+EXPOSE 8000
+
+# Health check cho Backend API
+HEALTHCHECK CMD curl --fail http://localhost:8000/health || exit 1
+
+# Khởi chạy FastAPI với Uvicorn server từ backend/app/main_api.py
+CMD ["uvicorn", "backend.app.main_api:app", "--host", "0.0.0.0", "--port", "8000"]
