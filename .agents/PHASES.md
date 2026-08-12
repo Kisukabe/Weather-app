@@ -16,9 +16,12 @@ Tệp này dùng để quản lý tiến độ thực hiện từng giai đoạn
 
 | **Phase 4** | Stage 03: PySpark Data Transformation | `COMPLETED` | `src/components/data_transformation.py` (PySpark Engine: 86 dòng train, 22 dòng test) |
 
-| **Phase 5** | Stage 04: Bias Correction Model Trainer | `PENDING` | `src/components/model_trainer.py`, `hcm_bias_correction_model.joblib` |
-| **Phase 6** | Stage 05: Model Evaluation Pipeline | `PENDING` | `src/components/model_evaluation.py`, `metrics.json` (MAE raw vs MAE corrected) |
-| **Phase 7** | Stage 06: Online Prediction Pipeline | `PENDING` | `src/components/prediction.py`, `forecast_corrected.json` |
+| **Phase 5** | Stage 04: Bias Correction Model Trainer | `COMPLETED` | `src/components/model_trainer.py`, `bias_correction_model.joblib` |
+
+| **Phase 6** | Stage 05: Model Evaluation Pipeline | `COMPLETED` | `src/components/model_evaluation.py`, `metrics.json` |
+
+| **Phase 7** | Stage 06: Online Prediction Pipeline | `COMPLETED` | `src/components/prediction.py`, `forecast_corrected.json` |
+
 | **Phase 8** | Chạy Pipeline Tự động (Airflow) & Web UI | `PENDING` | `dags/weather_pipeline_dag.py`, `app.py` (Streamlit Dashboard) |
 
 ---
