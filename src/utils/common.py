@@ -78,7 +78,6 @@ def load_json(path: Path) -> ConfigBox:
     return ConfigBox(content)
 
 
-@ensure_annotations
 def save_bin(data: Any, path: Path):
     """Lưu dữ liệu nhị phân (ví dụ: mô hình trained) bằng joblib.
 
@@ -90,7 +89,6 @@ def save_bin(data: Any, path: Path):
     logger.info(f"Đã lưu tệp nhị phân tại: {path}")
 
 
-@ensure_annotations
 def load_bin(path: Path) -> Any:
     """Nạp dữ liệu nhị phân bằng joblib.
 
@@ -103,6 +101,7 @@ def load_bin(path: Path) -> Any:
     data = joblib.load(filename=path)
     logger.info(f"Đã nạp tệp nhị phân từ: {path}")
     return data
+
 
 
 @ensure_annotations
