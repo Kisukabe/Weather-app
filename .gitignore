@@ -38,3 +38,10 @@ artifacts/
 
 # Binaries / Installers
 *.sh
+
+# AI Agent & Architecture Docs (Ignored from git commits)
+.agents/
+ARCHITECTURE_EXPLANATION.md
+SYSTEM_ARCHITECTURE.md
+implementation_plan.md
+walkthrough.md
