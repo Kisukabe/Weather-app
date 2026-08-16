@@ -5,9 +5,9 @@ install:
 	pip install -r requirements.txt
 	pip install -e .
 
-# Chạy Backend API (FastAPI) từ backend/app/main_api.py
+# Chạy Backend API (FastAPI) từ backend/app/main.py
 backend:
-	PYTHONPATH=. uvicorn backend.app.main_api:app --reload --port 8000
+	PYTHONPATH=. uvicorn backend.app.main:app --reload --port 8000
 
 # Chạy Frontend Dashboard (Streamlit) từ frontend/app.py
 frontend:

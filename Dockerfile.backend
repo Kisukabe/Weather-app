@@ -33,5 +33,5 @@ EXPOSE 8000
 # Health check cho Backend API
 HEALTHCHECK CMD curl --fail http://localhost:8000/health || exit 1
 
-# Khởi chạy FastAPI với Uvicorn server từ backend/app/main_api.py
-CMD ["uvicorn", "backend.app.main_api:app", "--host", "0.0.0.0", "--port", "8000"]
+# Khởi chạy FastAPI với Uvicorn server từ backend/app/main.py
+CMD ["uvicorn", "backend.app.main:app", "--host", "0.0.0.0", "--port", "8000"]

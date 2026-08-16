@@ -1,3 +1,4 @@
+# Định nghĩa Schema kiểm chuẩn dữ liệu thời tiết Open-Meteo
 COLUMNS:
   date: string
   temp_max: double
@@ -5,4 +6,20 @@ COLUMNS:
   temp_mean: double
   precipitation: double
   wind_speed: double
+  humidity: double           # [MỚI] Độ ẩm tương đối trung bình (%)
+  cloud_cover: double        # [MỚI] Độ che phủ của mây (%)
+  rain_probability: double   # [MỚI] Xác suất có mưa tối đa (%)
+  sunshine_duration: double  # [MỚI] Thời lượng nắng trong ngày (giây)
+  uv_index: double           # [MỚI] Chỉ số tia cực tím tối đa (UV)
   city: string
+
+TARGET_COLUMNS:
+  regression:
+    - temp_max_bias
+    - temp_min_bias
+    - temp_mean_bias
+    - humidity_bias
+    - cloud_cover_bias
+  classification:
+    - will_rain              # Phân loại: 0 (Không mưa) / 1 (Có mưa > 0.5mm)
+    - rain_intensity         # Phân loại 4 mức độ: 0 (Không), 1 (Nhẹ), 2 (Vừa), 3 (To)

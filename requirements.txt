@@ -1,34 +1,34 @@
 # Big Data & Data Manipulation
-pyspark==3.5.9
-pandas==2.3.3
-numpy==2.2.6
+pyspark>=3.5.0
+pandas>=2.2.0
+numpy>=1.26.0
 
 # Data Visualization
-matplotlib==3.10.9
-plotly==6.9.0
+matplotlib>=3.8.0
+plotly>=5.20.0
 
 # Machine Learning
-scikit-learn==1.7.2
+scikit-learn>=1.5.0
 xgboost>=2.0.0
 lightgbm>=4.0.0
 
 # Utilities & Config
-joblib==1.5.3
-python-box==7.4.1
-ensure==1.0.4
-PyYAML==6.0.3
-requests==2.34.2
-httpx==0.28.1
+joblib>=1.4.0
+python-box>=7.0.0
+ensure>=1.0.4
+PyYAML>=6.0.0
+requests>=2.31.0
+httpx>=0.27.0
 
 # Web Server & REST API
-fastapi==0.115.8
-uvicorn==0.34.0
-pydantic==2.10.6
+fastapi>=0.115.0
+uvicorn>=0.30.0
+pydantic>=2.8.0
 pydantic-settings>=2.0.0
-apscheduler==3.11.3
+apscheduler>=3.10.0
 
 # Web UI
-streamlit==1.61.1
+streamlit>=1.35.0
 
 # Testing
-pytest==9.1.1
+pytest>=8.0.0

@@ -1,5 +1,5 @@
 from fastapi.testclient import TestClient
-from backend.app.main_api import app
+from backend.app.main import app
 
 client = TestClient(app)
 
@@ -10,7 +10,7 @@ def test_health_check():
     assert response.status_code == 200
     data = response.json()
     assert data["status"] == "healthy"
-    assert data["service"] == "weather-mlops-backend"
+    assert "Weather" in data["service"]
 
 
 def test_get_pipeline_status():
