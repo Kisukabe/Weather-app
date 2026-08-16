@@ -1,0 +1,43 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    image: weather-backend:dev
+    container_name: weather_backend_dev
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    environment:
+      - DEBUG=true
+      - APP_ENV=development
+      - PYTHONPATH=/app
+    command: ["uvicorn", "backend.app.main:app", "--reload", "--host", "0.0.0.0", "--port", "8000"]
+    networks:
+      - weather_dev_network
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    image: weather-frontend:dev
+    container_name: weather_frontend_dev
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./frontend:/app/frontend
+    environment:
+      - BACKEND_URL=http://backend:8000
+      - STREAMLIT_SERVER_RUN_ON_SAVE=true
+    depends_on:
+      - backend
+    command: ["streamlit", "run", "frontend/app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+    networks:
+      - weather_dev_network
+
+networks:
+  weather_dev_network:
+    driver: bridge
