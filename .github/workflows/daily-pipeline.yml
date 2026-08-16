@@ -1,0 +1,68 @@
+name: Daily Weather MLOps Pipeline
+
+on:
+  schedule:
+    # 23:00 UTC = 06:00 AM Giờ Việt Nam (UTC+7) mỗi ngày
+    - cron: '0 23 * * *'
+  workflow_dispatch: # Cho phép kích hoạt thủ công trên GitHub UI bất kỳ lúc nào
+
+permissions:
+  contents: write
+
+jobs:
+  run-pyspark-mlops-pipeline:
+    name: Run PySpark Ingestion, Training & Prediction (7GB RAM Runner)
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Set up OpenJDK 17 (PySpark Big Data Engine)
+        uses: actions/setup-java@v4
+        with:
+          distribution: "temurin"
+          java-version: "17"
+
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+          cache: "pip"
+
+      - name: Install Project Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e .
+
+      - name: Execute 6 Stage Weather MLOps Pipeline
+        env:
+          PYTHONPATH: .
+          JAVA_HOME: /usr/lib/jvm/temurin-17-jdk-amd64
+        run: |
+          python main.py
+
+      - name: Commit & Push Updated Forecast Artifacts
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add artifacts/prediction/forecast_corrected.json artifacts/model_evaluation/metrics.json artifacts/weather_history.db
+          
+          # Chỉ commit nếu có sự thay đổi trong dữ liệu dự báo
+          if git diff --staged --quiet; then
+            echo "Không có dữ liệu mới cần cập nhật."
+          else
+            git commit -m "chore(data): auto-update daily weather forecast artifacts [skip ci]"
+            git push origin main
+          fi
+
+      - name: Trigger Render Backend Auto-Deploy (Optional)
+        if: env.RENDER_DEPLOY_HOOK != ''
+        env:
+          RENDER_DEPLOY_HOOK: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
+        run: |
+          echo "Kích hoạt Render Deploy Hook để cập nhật API..."
+          curl -X POST "$RENDER_DEPLOY_HOOK"
