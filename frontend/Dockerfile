@@ -2,6 +2,7 @@
 # 📊 Frontend Multi-Stage Dockerfile: Streamlit Web UI
 # ============================================================
 
+# --- Stage 1: Builder Stage ---
 FROM python:3.10-slim AS builder
 
 WORKDIR /build
@@ -10,6 +11,7 @@ COPY frontend/requirements.txt requirements.txt
 RUN pip install --no-cache-dir --user -r requirements.txt
 
 
+# --- Stage 2: Final Minimal Runtime Stage ---
 FROM python:3.10-slim AS runtime
 
 RUN apt-get update && apt-get install -y --no-install-recommends \

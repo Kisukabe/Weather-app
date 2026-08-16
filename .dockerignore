@@ -1,8 +1,9 @@
 # Git
 .git/
 .gitignore
+.github/
 
-# Python cache
+# Python cache & tests
 __pycache__/
 *.pyc
 *.pyo
@@ -11,23 +12,24 @@ __pycache__/
 *.egg-info/
 build/
 dist/
+.pytest_cache/
+.coverage
+htmlcov/
 
-# Artifacts & Logs
-artifacts/
+# Artifacts & Logs (tự tạo trong container, không copy đè từ local)
 logs/
+.venv/
+venv/
+env/
 
 # Mac OS metadata
 .DS_Store
 
-# IDE & Agents
+# IDE & Config
 .vscode/
 .idea/
 .agents/
 
-# Temporary installers
-Miniforge3-MacOSX-arm64.sh
-
-# Environment & plan docs
-*.env
-implementation_plan.md
-walkthrough.md
+# Documentation & temporary installers
+Miniforge3-*.sh
+*.md
