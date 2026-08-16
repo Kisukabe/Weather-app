@@ -1,9 +1,32 @@
+# Cấu hình siêu tham số các mô hình ML trong Model Registry
+
 RandomForestRegressor:
   n_estimators: 100
   random_state: 42
   max_depth: 12
   n_jobs: -1
 
+XGBRegressor:
+  n_estimators: 200
+  max_depth: 6
+  learning_rate: 0.05
+  random_state: 42
+  n_jobs: -1
+
+LGBMRegressor:
+  n_estimators: 200
+  learning_rate: 0.05
+  random_state: 42
+  verbose: -1
+
+Ridge:
+  alpha: 1.0
+
+RainClassifier:
+  n_estimators: 100
+  max_depth: 8
+  random_state: 42
+
 PySpark:
-  app_name: "Weather_Bias_Correction_HCMC"
+  app_name: "Weather_MultiTarget_Transformation"
   master: "local[*]"
