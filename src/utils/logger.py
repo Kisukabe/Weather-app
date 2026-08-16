@@ -29,11 +29,12 @@ def setup_logging(config_path: Path = LOG_FILE_CONFIG):
                 config = yaml.safe_load(f)
             logging.config.dictConfig(config)
         except Exception as e:
+            from logging.handlers import RotatingFileHandler
             logging.basicConfig(
                 level=logging.INFO,
                 format="[%(asctime)s]: %(levelname)s: %(module)s: %(message)s",
                 handlers=[
-                    logging.FileHandler(LOG_DIR / "app.log", encoding="utf-8"),
+                    RotatingFileHandler(LOG_DIR / "app.log", maxBytes=10485760, backupCount=5, encoding="utf-8"),
                     logging.StreamHandler(sys.stdout),
                 ],
             )
@@ -41,11 +42,12 @@ def setup_logging(config_path: Path = LOG_FILE_CONFIG):
                 f"Không thể nạp {config_path}. Đã dùng cấu hình mặc định. Lỗi: {e}"
             )
     else:
+        from logging.handlers import RotatingFileHandler
         logging.basicConfig(
             level=logging.INFO,
             format="[%(asctime)s]: %(levelname)s: %(module)s: %(message)s",
             handlers=[
-                logging.FileHandler(LOG_DIR / "app.log", encoding="utf-8"),
+                RotatingFileHandler(LOG_DIR / "app.log", maxBytes=10485760, backupCount=5, encoding="utf-8"),
                 logging.StreamHandler(sys.stdout),
             ],
         )

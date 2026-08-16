@@ -12,10 +12,12 @@ handlers:
     level: INFO
     stream: ext://sys.stdout
   file:
-    class: logging.FileHandler
+    class: logging.handlers.RotatingFileHandler
     formatter: simple
     level: INFO
     filename: logs/app.log
+    maxBytes: 10485760 # 10 MB per file
+    backupCount: 5     # Max 5 backup files = 50 MB total retention
     encoding: utf-8
 
 loggers:

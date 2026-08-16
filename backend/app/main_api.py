@@ -1,28 +1,24 @@
 import json
+import os
+from contextlib import asynccontextmanager
 from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict
 
+from apscheduler.schedulers.background import BackgroundScheduler
+from apscheduler.triggers.cron import CronTrigger
 from fastapi import BackgroundTasks, FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
 from main import run_pipeline
 from src.utils.logger import logger
 
-app = FastAPI(
-    title="Weather MLOps Backend API",
-    description="REST API cho Hệ thống Hiệu chỉnh Sai số Dự báo Thời tiết TP.HCM",
-    version="1.0.0",
-)
+# Khởi tạo APScheduler toàn cục
+scheduler = BackgroundScheduler(daemon=True)
 
-# Cấu hình CORS
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+# Lấy cấu hình lịch tự động từ biến môi trường (mặc định: 6:00 sáng mỗi ngày)
+CRON_HOUR = int(os.getenv("SCHEDULE_CRON_HOUR", "6"))
+CRON_MINUTE = int(os.getenv("SCHEDULE_CRON_MINUTE", "0"))
 
 # Quản lý trạng thái Pipeline toàn cục
 pipeline_state: Dict[str, Any] = {
@@ -34,8 +30,12 @@ pipeline_state: Dict[str, Any] = {
 
 
 def _execute_pipeline_task():
-    """Hàm chạy 6 Stage Pipeline trong Background Task."""
+    """Hàm chạy 6 Stage Pipeline trong Background Task hoặc qua APScheduler."""
     global pipeline_state
+    if pipeline_state["status"] == "RUNNING":
+        logger.warning("FastAPI Backend: Pipeline đang chạy, bỏ qua lượt kích hoạt trùng.")
+        return
+
     pipeline_state["status"] = "RUNNING"
     pipeline_state["message"] = "Đang chạy 6 Stage MLOps Pipeline..."
     pipeline_state["started_at"] = datetime.now().isoformat()
@@ -55,12 +55,53 @@ def _execute_pipeline_task():
         pipeline_state["finished_at"] = datetime.now().isoformat()
 
 
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    """Quản lý khởi động và dừng APScheduler ngầm cùng FastAPI server."""
+    logger.info(f"Khởi động APScheduler ngầm: Lịch chạy tự động mỗi ngày lúc {CRON_HOUR:02d}:{CRON_MINUTE:02d} AM.")
+    scheduler.add_job(
+        _execute_pipeline_task,
+        trigger=CronTrigger(hour=CRON_HOUR, minute=CRON_MINUTE),
+        id="daily_weather_pipeline",
+        name="Daily Weather Forecast Bias Correction Pipeline",
+        replace_existing=True,
+    )
+    scheduler.start()
+    yield
+    logger.info("Tắt APScheduler ngầm...")
+    scheduler.shutdown(wait=False)
+
+
+app = FastAPI(
+    title="Weather MLOps Backend API",
+    description="REST API cho Hệ thống Hiệu chỉnh Sai số Dự báo Thời tiết TP.HCM (Tích hợp APScheduler ngầm)",
+    version="1.1.0",
+    lifespan=lifespan,
+)
+
+# Cấu hình CORS
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+
 @app.get("/health", tags=["Health"])
 def health_check():
-    """Endpoint kiểm tra sức khỏe dịch vụ Backend."""
+    """Endpoint kiểm tra sức khỏe dịch vụ Backend & APScheduler."""
+    job = scheduler.get_job("daily_weather_pipeline")
+    next_run = job.next_run_time.isoformat() if job and job.next_run_time else None
     return {
         "status": "healthy",
         "service": "weather-mlops-backend",
+        "scheduler": {
+            "enabled": scheduler.running,
+            "schedule": f"Daily at {CRON_HOUR:02d}:{CRON_MINUTE:02d}",
+            "next_run": next_run,
+        },
         "timestamp": datetime.now().isoformat(),
     }
 
@@ -107,7 +148,7 @@ def get_predictions():
 
 @app.post("/api/v1/pipeline/run", tags=["Pipeline"])
 def trigger_pipeline(background_tasks: BackgroundTasks):
-    """Kích hoạt chạy 6 Stage MLOps Pipeline bất đồng bộ."""
+    """Kích hoạt chạy 6 Stage MLOps Pipeline thủ công qua API."""
     global pipeline_state
     if pipeline_state["status"] == "RUNNING":
         return {
@@ -124,5 +165,15 @@ def trigger_pipeline(background_tasks: BackgroundTasks):
 
 @app.get("/api/v1/pipeline/status", tags=["Pipeline"])
 def get_pipeline_status():
-    """Lấy trạng thái thực thi hiện tại của Pipeline."""
-    return pipeline_state
+    """Lấy trạng thái thực thi hiện tại của Pipeline và lịch chạy APScheduler."""
+    job = scheduler.get_job("daily_weather_pipeline")
+    next_run = job.next_run_time.isoformat() if job and job.next_run_time else None
+
+    return {
+        **pipeline_state,
+        "scheduler": {
+            "enabled": scheduler.running,
+            "schedule": f"Daily at {CRON_HOUR:02d}:{CRON_MINUTE:02d}",
+            "next_run": next_run,
+        },
+    }

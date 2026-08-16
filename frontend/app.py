@@ -28,7 +28,11 @@ st.sidebar.header("⚙️ Pipeline Controls")
 try:
     health_resp = requests.get(f"{BACKEND_URL}/health", timeout=3)
     if health_resp.status_code == 200:
+        health_data = health_resp.json()
         st.sidebar.success("🟢 Backend Connected (FastAPI)")
+        if "scheduler" in health_data:
+            sched = health_data["scheduler"]
+            st.sidebar.caption(f"⏰ Lịch chạy tự động: **{sched.get('schedule')}**")
     else:
         st.sidebar.warning("🟡 Backend Status Warning")
 except Exception:

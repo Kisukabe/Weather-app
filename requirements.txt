@@ -9,6 +9,8 @@ plotly==6.9.0
 
 # Machine Learning
 scikit-learn==1.7.2
+xgboost>=2.0.0
+lightgbm>=4.0.0
 
 # Utilities & Config
 joblib==1.5.3
@@ -22,6 +24,8 @@ httpx==0.28.1
 fastapi==0.115.8
 uvicorn==0.34.0
 pydantic==2.10.6
+pydantic-settings>=2.0.0
+apscheduler==3.11.3
 
 # Web UI
 streamlit==1.61.1
