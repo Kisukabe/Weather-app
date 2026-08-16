@@ -1,0 +1,38 @@
+# ============================================================
+# 🚀 Render Blueprint (Infrastructure as Code)
+# ============================================================
+services:
+  - type: web
+    name: weather-mlops-backend
+    runtime: docker
+    dockerfilePath: backend/Dockerfile
+    plan: free
+    region: singapore # Chọn region Singapore gần Việt Nam cho tốc độ nhanh nhất
+    healthCheckPath: /health
+    autoDeploy: true
+
+    envVars:
+      - key: APP_NAME
+        value: "Weather Forecast Bias Correction API"
+      - key: APP_ENV
+        value: "production"
+      - key: DEBUG
+        value: "false"
+      - key: PORT
+        value: "8000"
+      - key: HOST
+        value: "0.0.0.0"
+      - key: API_KEY
+        generateValue: true
+      - key: CORS_ORIGINS
+        value: "*"
+      - key: RATE_LIMIT_REQUESTS
+        value: "60"
+      - key: RATE_LIMIT_WINDOW_SECONDS
+        value: "60"
+      - key: AUTO_TRAIN_ENABLED
+        value: "false" # Training được tự động hóa bởi GitHub Actions Runner (7GB RAM)
+      - key: SQLITE_DB_PATH
+        value: "artifacts/weather_history.db"
+      - key: DB_RETENTION_DAYS
+        value: "30"
