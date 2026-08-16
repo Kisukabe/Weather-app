@@ -1,0 +1,49 @@
+{
+    "best_model": "xgboost",
+    "raw_forecast_metrics": {
+        "mae": 0.0,
+        "rmse": 0.0,
+        "r2": 1.0
+    },
+    "corrected_forecast_metrics": {
+        "mae": 0.0,
+        "rmse": 0.0,
+        "r2": 1.0,
+        "mae_reduction_percentage": 0.0
+    },
+    "improvement": {
+        "mae_reduction_percentage": 0.0
+    },
+    "models_comparison": {
+        "xgboost": {
+            "mae": 0.0,
+            "rmse": 0.0,
+            "r2": 1.0,
+            "mae_reduction_percentage": 0.0
+        },
+        "lightgbm": {
+            "mae": 0.0,
+            "rmse": 0.0,
+            "r2": 1.0,
+            "mae_reduction_percentage": 0.0
+        },
+        "random_forest": {
+            "mae": 0.0,
+            "rmse": 0.0,
+            "r2": 1.0,
+            "mae_reduction_percentage": 0.0
+        },
+        "linear_regression": {
+            "mae": 0.0,
+            "rmse": 0.0,
+            "r2": 1.0,
+            "mae_reduction_percentage": 0.0
+        }
+    },
+    "rain_classification_metrics": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0
+    }
+}

@@ -1,0 +1,2390 @@
+{
+    "generated_at": "2026-08-17 00:43:15",
+    "city": "Ho Chi Minh City",
+    "total_forecast_days": 72,
+    "default_model": "xgboost",
+    "available_models": [
+        "xgboost",
+        "lightgbm",
+        "random_forest",
+        "linear_regression"
+    ],
+    "predictions": [
+        {
+            "date": "2026-06-21",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 34.0,
+            "raw_forecast_temp_min": 25.9,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 34.0,
+            "humidity": 76.0,
+            "cloud_cover": 71.0,
+            "rain_probability": 47.0,
+            "sunshine_duration_hours": 12.0,
+            "uv_index": 8.8,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 34.0
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 34.0
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 34.0
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 34.0
+                }
+            }
+        },
+        {
+            "date": "2026-06-22",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 34.5,
+            "raw_forecast_temp_min": 26.2,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 34.5,
+            "humidity": 75.0,
+            "cloud_cover": 67.0,
+            "rain_probability": 81.0,
+            "sunshine_duration_hours": 12.0,
+            "uv_index": 8.8,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 34.5
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 34.5
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 34.5
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 34.5
+                }
+            }
+        },
+        {
+            "date": "2026-06-23",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 32.5,
+            "raw_forecast_temp_min": 25.2,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 32.5,
+            "humidity": 83.0,
+            "cloud_cover": 92.0,
+            "rain_probability": 80.0,
+            "sunshine_duration_hours": 10.1,
+            "uv_index": 5.9,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.5
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.5
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.5
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.5
+                }
+            }
+        },
+        {
+            "date": "2026-06-24",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 35.2,
+            "raw_forecast_temp_min": 25.8,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 35.2,
+            "humidity": 79.0,
+            "cloud_cover": 74.0,
+            "rain_probability": 78.0,
+            "sunshine_duration_hours": 11.9,
+            "uv_index": 8.4,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 35.2
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 35.2
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 35.2
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 35.2
+                }
+            }
+        },
+        {
+            "date": "2026-06-25",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 34.2,
+            "raw_forecast_temp_min": 25.5,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 34.2,
+            "humidity": 79.0,
+            "cloud_cover": 68.0,
+            "rain_probability": 96.0,
+            "sunshine_duration_hours": 9.8,
+            "uv_index": 6.2,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 34.2
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 34.2
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 34.2
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 34.2
+                }
+            }
+        },
+        {
+            "date": "2026-06-26",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 33.1,
+            "raw_forecast_temp_min": 25.3,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 33.1,
+            "humidity": 80.0,
+            "cloud_cover": 49.0,
+            "rain_probability": 78.0,
+            "sunshine_duration_hours": 12.0,
+            "uv_index": 7.9,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.1
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.1
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.1
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.1
+                }
+            }
+        },
+        {
+            "date": "2026-06-27",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 33.8,
+            "raw_forecast_temp_min": 25.7,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 33.8,
+            "humidity": 77.0,
+            "cloud_cover": 72.0,
+            "rain_probability": 91.0,
+            "sunshine_duration_hours": 11.6,
+            "uv_index": 8.6,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.8
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.8
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.8
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.8
+                }
+            }
+        },
+        {
+            "date": "2026-06-28",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 32.3,
+            "raw_forecast_temp_min": 26.3,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 32.3,
+            "humidity": 88.0,
+            "cloud_cover": 92.0,
+            "rain_probability": 100.0,
+            "sunshine_duration_hours": 7.6,
+            "uv_index": 7.8,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.3
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.3
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.3
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.3
+                }
+            }
+        },
+        {
+            "date": "2026-06-29",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 32.7,
+            "raw_forecast_temp_min": 26.1,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 32.7,
+            "humidity": 87.0,
+            "cloud_cover": 90.0,
+            "rain_probability": 100.0,
+            "sunshine_duration_hours": 10.2,
+            "uv_index": 6.3,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.7
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.7
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.7
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.7
+                }
+            }
+        },
+        {
+            "date": "2026-06-30",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 32.2,
+            "raw_forecast_temp_min": 25.0,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 32.2,
+            "humidity": 86.0,
+            "cloud_cover": 98.0,
+            "rain_probability": 100.0,
+            "sunshine_duration_hours": 8.7,
+            "uv_index": 5.5,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.2
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.2
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.2
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.2
+                }
+            }
+        },
+        {
+            "date": "2026-07-01",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 32.9,
+            "raw_forecast_temp_min": 25.8,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 32.9,
+            "humidity": 79.0,
+            "cloud_cover": 87.0,
+            "rain_probability": 86.0,
+            "sunshine_duration_hours": 10.6,
+            "uv_index": 7.9,
+            "will_rain": false,
+            "rain_status": "Không mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.9
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.9
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.9
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.9
+                }
+            }
+        },
+        {
+            "date": "2026-07-02",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 30.1,
+            "raw_forecast_temp_min": 24.4,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 30.1,
+            "humidity": 89.0,
+            "cloud_cover": 99.0,
+            "rain_probability": 100.0,
+            "sunshine_duration_hours": 3.7,
+            "uv_index": 7.5,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 30.1
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 30.1
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 30.1
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 30.1
+                }
+            }
+        },
+        {
+            "date": "2026-07-03",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 29.6,
+            "raw_forecast_temp_min": 24.9,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 29.6,
+            "humidity": 88.0,
+            "cloud_cover": 100.0,
+            "rain_probability": 96.0,
+            "sunshine_duration_hours": 0.3,
+            "uv_index": 7.0,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 29.6
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 29.6
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 29.6
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 29.6
+                }
+            }
+        },
+        {
+            "date": "2026-07-04",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 29.6,
+            "raw_forecast_temp_min": 24.7,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 29.6,
+            "humidity": 91.0,
+            "cloud_cover": 100.0,
+            "rain_probability": 100.0,
+            "sunshine_duration_hours": 2.0,
+            "uv_index": 6.8,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 29.6
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 29.6
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 29.6
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 29.6
+                }
+            }
+        },
+        {
+            "date": "2026-07-05",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 31.1,
+            "raw_forecast_temp_min": 24.9,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 31.1,
+            "humidity": 84.0,
+            "cloud_cover": 98.0,
+            "rain_probability": 90.0,
+            "sunshine_duration_hours": 7.1,
+            "uv_index": 8.2,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.1
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.1
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.1
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.1
+                }
+            }
+        },
+        {
+            "date": "2026-07-06",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 30.9,
+            "raw_forecast_temp_min": 25.4,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 30.9,
+            "humidity": 84.0,
+            "cloud_cover": 99.0,
+            "rain_probability": 59.0,
+            "sunshine_duration_hours": 6.2,
+            "uv_index": 8.5,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 30.9
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 30.9
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 30.9
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 30.9
+                }
+            }
+        },
+        {
+            "date": "2026-07-07",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 31.5,
+            "raw_forecast_temp_min": 25.3,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 31.5,
+            "humidity": 85.0,
+            "cloud_cover": 90.0,
+            "rain_probability": 100.0,
+            "sunshine_duration_hours": 8.7,
+            "uv_index": 7.8,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.5
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.5
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.5
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.5
+                }
+            }
+        },
+        {
+            "date": "2026-07-08",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 31.3,
+            "raw_forecast_temp_min": 24.0,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 31.3,
+            "humidity": 87.0,
+            "cloud_cover": 83.0,
+            "rain_probability": 96.0,
+            "sunshine_duration_hours": 10.1,
+            "uv_index": 7.8,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.3
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.3
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.3
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.3
+                }
+            }
+        },
+        {
+            "date": "2026-07-09",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 33.0,
+            "raw_forecast_temp_min": 25.4,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 33.0,
+            "humidity": 78.0,
+            "cloud_cover": 90.0,
+            "rain_probability": 65.0,
+            "sunshine_duration_hours": 11.5,
+            "uv_index": 8.3,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.0
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.0
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.0
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.0
+                }
+            }
+        },
+        {
+            "date": "2026-07-10",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 33.6,
+            "raw_forecast_temp_min": 26.0,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 33.6,
+            "humidity": 74.0,
+            "cloud_cover": 98.0,
+            "rain_probability": 71.0,
+            "sunshine_duration_hours": 11.6,
+            "uv_index": 8.4,
+            "will_rain": false,
+            "rain_status": "Không mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.6
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.6
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.6
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.6
+                }
+            }
+        },
+        {
+            "date": "2026-07-11",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 33.1,
+            "raw_forecast_temp_min": 26.6,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 33.1,
+            "humidity": 73.0,
+            "cloud_cover": 56.0,
+            "rain_probability": 80.0,
+            "sunshine_duration_hours": 11.9,
+            "uv_index": 8.7,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.1
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.1
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.1
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.1
+                }
+            }
+        },
+        {
+            "date": "2026-07-12",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 30.6,
+            "raw_forecast_temp_min": 26.2,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 30.6,
+            "humidity": 81.0,
+            "cloud_cover": 91.0,
+            "rain_probability": 91.0,
+            "sunshine_duration_hours": 8.7,
+            "uv_index": 7.2,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 30.6
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 30.6
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 30.6
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 30.6
+                }
+            }
+        },
+        {
+            "date": "2026-07-13",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 31.5,
+            "raw_forecast_temp_min": 25.1,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 31.5,
+            "humidity": 84.0,
+            "cloud_cover": 97.0,
+            "rain_probability": 100.0,
+            "sunshine_duration_hours": 4.1,
+            "uv_index": 7.6,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.5
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.5
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.5
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.5
+                }
+            }
+        },
+        {
+            "date": "2026-07-14",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 32.1,
+            "raw_forecast_temp_min": 25.0,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 32.1,
+            "humidity": 80.0,
+            "cloud_cover": 84.0,
+            "rain_probability": 90.0,
+            "sunshine_duration_hours": 11.0,
+            "uv_index": 7.4,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.1
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.1
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.1
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.1
+                }
+            }
+        },
+        {
+            "date": "2026-07-15",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 31.7,
+            "raw_forecast_temp_min": 25.0,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 31.7,
+            "humidity": 87.0,
+            "cloud_cover": 97.0,
+            "rain_probability": 96.0,
+            "sunshine_duration_hours": 7.6,
+            "uv_index": 8.7,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.7
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.7
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.7
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.7
+                }
+            }
+        },
+        {
+            "date": "2026-07-16",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 32.6,
+            "raw_forecast_temp_min": 23.9,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 32.6,
+            "humidity": 82.0,
+            "cloud_cover": 90.0,
+            "rain_probability": 96.0,
+            "sunshine_duration_hours": 11.6,
+            "uv_index": 8.7,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.6
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.6
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.6
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.6
+                }
+            }
+        },
+        {
+            "date": "2026-07-17",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 32.8,
+            "raw_forecast_temp_min": 25.0,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 32.8,
+            "humidity": 80.0,
+            "cloud_cover": 91.0,
+            "rain_probability": 90.0,
+            "sunshine_duration_hours": 9.7,
+            "uv_index": 7.8,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.8
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.8
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.8
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.8
+                }
+            }
+        },
+        {
+            "date": "2026-07-18",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 32.8,
+            "raw_forecast_temp_min": 25.7,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 32.8,
+            "humidity": 82.0,
+            "cloud_cover": 75.0,
+            "rain_probability": 96.0,
+            "sunshine_duration_hours": 10.6,
+            "uv_index": 8.7,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.8
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.8
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.8
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.8
+                }
+            }
+        },
+        {
+            "date": "2026-07-19",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 33.0,
+            "raw_forecast_temp_min": 25.1,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 33.0,
+            "humidity": 81.0,
+            "cloud_cover": 40.0,
+            "rain_probability": 86.0,
+            "sunshine_duration_hours": 12.0,
+            "uv_index": 8.7,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.0
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.0
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.0
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.0
+                }
+            }
+        },
+        {
+            "date": "2026-07-20",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 34.1,
+            "raw_forecast_temp_min": 25.3,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 34.1,
+            "humidity": 73.0,
+            "cloud_cover": 18.0,
+            "rain_probability": 8.0,
+            "sunshine_duration_hours": 12.0,
+            "uv_index": 8.8,
+            "will_rain": false,
+            "rain_status": "Không mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 34.1
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 34.1
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 34.1
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 34.1
+                }
+            }
+        },
+        {
+            "date": "2026-07-21",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 34.2,
+            "raw_forecast_temp_min": 24.8,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 34.2,
+            "humidity": 72.0,
+            "cloud_cover": 50.0,
+            "rain_probability": 2.0,
+            "sunshine_duration_hours": 12.0,
+            "uv_index": 8.8,
+            "will_rain": false,
+            "rain_status": "Không mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 34.2
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 34.2
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 34.2
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 34.2
+                }
+            }
+        },
+        {
+            "date": "2026-07-22",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 33.5,
+            "raw_forecast_temp_min": 25.0,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 33.5,
+            "humidity": 72.0,
+            "cloud_cover": 37.0,
+            "rain_probability": 25.0,
+            "sunshine_duration_hours": 12.0,
+            "uv_index": 8.8,
+            "will_rain": false,
+            "rain_status": "Không mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.5
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.5
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.5
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.5
+                }
+            }
+        },
+        {
+            "date": "2026-07-23",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 33.6,
+            "raw_forecast_temp_min": 25.8,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 33.6,
+            "humidity": 78.0,
+            "cloud_cover": 50.0,
+            "rain_probability": 77.0,
+            "sunshine_duration_hours": 11.1,
+            "uv_index": 7.0,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.6
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.6
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.6
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.6
+                }
+            }
+        },
+        {
+            "date": "2026-07-24",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 32.6,
+            "raw_forecast_temp_min": 24.9,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 32.6,
+            "humidity": 88.0,
+            "cloud_cover": 73.0,
+            "rain_probability": 100.0,
+            "sunshine_duration_hours": 12.0,
+            "uv_index": 8.2,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.6
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.6
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.6
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.6
+                }
+            }
+        },
+        {
+            "date": "2026-07-25",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 31.2,
+            "raw_forecast_temp_min": 24.4,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 31.2,
+            "humidity": 90.0,
+            "cloud_cover": 89.0,
+            "rain_probability": 100.0,
+            "sunshine_duration_hours": 7.8,
+            "uv_index": 7.4,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.2
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.2
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.2
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.2
+                }
+            }
+        },
+        {
+            "date": "2026-07-26",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 29.7,
+            "raw_forecast_temp_min": 24.7,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 29.7,
+            "humidity": 90.0,
+            "cloud_cover": 94.0,
+            "rain_probability": 100.0,
+            "sunshine_duration_hours": 8.0,
+            "uv_index": 8.8,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 29.7
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 29.7
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 29.7
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 29.7
+                }
+            }
+        },
+        {
+            "date": "2026-07-27",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 32.5,
+            "raw_forecast_temp_min": 24.6,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 32.5,
+            "humidity": 78.0,
+            "cloud_cover": 90.0,
+            "rain_probability": 78.0,
+            "sunshine_duration_hours": 11.3,
+            "uv_index": 7.7,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.5
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.5
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.5
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.5
+                }
+            }
+        },
+        {
+            "date": "2026-07-28",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 29.6,
+            "raw_forecast_temp_min": 24.5,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 29.6,
+            "humidity": 89.0,
+            "cloud_cover": 99.0,
+            "rain_probability": 100.0,
+            "sunshine_duration_hours": 7.4,
+            "uv_index": 8.2,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 29.6
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 29.6
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 29.6
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 29.6
+                }
+            }
+        },
+        {
+            "date": "2026-07-29",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 31.5,
+            "raw_forecast_temp_min": 24.2,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 31.5,
+            "humidity": 86.0,
+            "cloud_cover": 93.0,
+            "rain_probability": 100.0,
+            "sunshine_duration_hours": 10.1,
+            "uv_index": 8.8,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.5
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.5
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.5
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.5
+                }
+            }
+        },
+        {
+            "date": "2026-07-30",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 31.2,
+            "raw_forecast_temp_min": 24.1,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 31.2,
+            "humidity": 83.0,
+            "cloud_cover": 93.0,
+            "rain_probability": 79.0,
+            "sunshine_duration_hours": 10.0,
+            "uv_index": 7.9,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.2
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.2
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.2
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.2
+                }
+            }
+        },
+        {
+            "date": "2026-07-31",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 30.0,
+            "raw_forecast_temp_min": 24.7,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 30.0,
+            "humidity": 89.0,
+            "cloud_cover": 90.0,
+            "rain_probability": 100.0,
+            "sunshine_duration_hours": 9.9,
+            "uv_index": 7.7,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 30.0
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 30.0
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 30.0
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 30.0
+                }
+            }
+        },
+        {
+            "date": "2026-08-01",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 32.0,
+            "raw_forecast_temp_min": 24.7,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 32.0,
+            "humidity": 84.0,
+            "cloud_cover": 95.0,
+            "rain_probability": 100.0,
+            "sunshine_duration_hours": 10.9,
+            "uv_index": 8.0,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.0
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.0
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.0
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.0
+                }
+            }
+        },
+        {
+            "date": "2026-08-02",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 33.5,
+            "raw_forecast_temp_min": 25.2,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 33.5,
+            "humidity": 80.0,
+            "cloud_cover": 84.0,
+            "rain_probability": 69.0,
+            "sunshine_duration_hours": 12.0,
+            "uv_index": 8.9,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.5
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.5
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.5
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.5
+                }
+            }
+        },
+        {
+            "date": "2026-08-03",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 33.8,
+            "raw_forecast_temp_min": 25.4,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 33.8,
+            "humidity": 78.0,
+            "cloud_cover": 82.0,
+            "rain_probability": 57.0,
+            "sunshine_duration_hours": 12.0,
+            "uv_index": 8.6,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.8
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.8
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.8
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.8
+                }
+            }
+        },
+        {
+            "date": "2026-08-04",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 33.2,
+            "raw_forecast_temp_min": 26.1,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 33.2,
+            "humidity": 80.0,
+            "cloud_cover": 81.0,
+            "rain_probability": 71.0,
+            "sunshine_duration_hours": 12.0,
+            "uv_index": 8.7,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.2
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.2
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.2
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.2
+                }
+            }
+        },
+        {
+            "date": "2026-08-05",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 31.3,
+            "raw_forecast_temp_min": 24.4,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 31.3,
+            "humidity": 86.0,
+            "cloud_cover": 99.0,
+            "rain_probability": 100.0,
+            "sunshine_duration_hours": 7.2,
+            "uv_index": 8.6,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.3
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.3
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.3
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.3
+                }
+            }
+        },
+        {
+            "date": "2026-08-06",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 30.7,
+            "raw_forecast_temp_min": 25.6,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 30.7,
+            "humidity": 87.0,
+            "cloud_cover": 96.0,
+            "rain_probability": 100.0,
+            "sunshine_duration_hours": 7.7,
+            "uv_index": 7.5,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 30.7
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 30.7
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 30.7
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 30.7
+                }
+            }
+        },
+        {
+            "date": "2026-08-07",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 32.1,
+            "raw_forecast_temp_min": 25.3,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 32.1,
+            "humidity": 83.0,
+            "cloud_cover": 82.0,
+            "rain_probability": 91.0,
+            "sunshine_duration_hours": 8.9,
+            "uv_index": 7.7,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.1
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.1
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.1
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.1
+                }
+            }
+        },
+        {
+            "date": "2026-08-08",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 32.8,
+            "raw_forecast_temp_min": 25.7,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 32.8,
+            "humidity": 80.0,
+            "cloud_cover": 95.0,
+            "rain_probability": 94.0,
+            "sunshine_duration_hours": 11.1,
+            "uv_index": 7.3,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.8
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.8
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.8
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.8
+                }
+            }
+        },
+        {
+            "date": "2026-08-09",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 31.4,
+            "raw_forecast_temp_min": 25.1,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 31.4,
+            "humidity": 85.0,
+            "cloud_cover": 99.0,
+            "rain_probability": 100.0,
+            "sunshine_duration_hours": 6.7,
+            "uv_index": 5.8,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.4
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.4
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.4
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.4
+                }
+            }
+        },
+        {
+            "date": "2026-08-10",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 30.3,
+            "raw_forecast_temp_min": 24.6,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 30.3,
+            "humidity": 86.0,
+            "cloud_cover": 93.0,
+            "rain_probability": 93.0,
+            "sunshine_duration_hours": 5.4,
+            "uv_index": 8.0,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 30.3
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 30.3
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 30.3
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 30.3
+                }
+            }
+        },
+        {
+            "date": "2026-08-11",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 30.8,
+            "raw_forecast_temp_min": 24.8,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 30.8,
+            "humidity": 84.0,
+            "cloud_cover": 97.0,
+            "rain_probability": 100.0,
+            "sunshine_duration_hours": 7.6,
+            "uv_index": 8.8,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 30.8
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 30.8
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 30.8
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 30.8
+                }
+            }
+        },
+        {
+            "date": "2026-08-12",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 32.7,
+            "raw_forecast_temp_min": 26.0,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 32.7,
+            "humidity": 76.0,
+            "cloud_cover": 40.0,
+            "rain_probability": 91.0,
+            "sunshine_duration_hours": 12.0,
+            "uv_index": 8.7,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.7
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.7
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.7
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.7
+                }
+            }
+        },
+        {
+            "date": "2026-08-13",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 33.2,
+            "raw_forecast_temp_min": 25.4,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 33.2,
+            "humidity": 72.0,
+            "cloud_cover": 26.0,
+            "rain_probability": 92.0,
+            "sunshine_duration_hours": 12.0,
+            "uv_index": 7.9,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.2
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.2
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.2
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.2
+                }
+            }
+        },
+        {
+            "date": "2026-08-14",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 32.7,
+            "raw_forecast_temp_min": 25.7,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 32.7,
+            "humidity": 80.0,
+            "cloud_cover": 90.0,
+            "rain_probability": 98.0,
+            "sunshine_duration_hours": 11.3,
+            "uv_index": 6.8,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.7
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.7
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.7
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.7
+                }
+            }
+        },
+        {
+            "date": "2026-08-15",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 31.4,
+            "raw_forecast_temp_min": 25.8,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 31.4,
+            "humidity": 81.0,
+            "cloud_cover": 97.0,
+            "rain_probability": 84.0,
+            "sunshine_duration_hours": 8.8,
+            "uv_index": 8.2,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.4
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.4
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.4
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.4
+                }
+            }
+        },
+        {
+            "date": "2026-08-16",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 31.9,
+            "raw_forecast_temp_min": 25.5,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 31.9,
+            "humidity": 82.0,
+            "cloud_cover": 96.0,
+            "rain_probability": 100.0,
+            "sunshine_duration_hours": 9.0,
+            "uv_index": 8.8,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.9
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.9
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.9
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.9
+                }
+            }
+        },
+        {
+            "date": "2026-08-17",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 31.9,
+            "raw_forecast_temp_min": 25.8,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 31.9,
+            "humidity": 83.0,
+            "cloud_cover": 94.0,
+            "rain_probability": 100.0,
+            "sunshine_duration_hours": 11.0,
+            "uv_index": 7.8,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.9
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.9
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.9
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.9
+                }
+            }
+        },
+        {
+            "date": "2026-08-18",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 31.0,
+            "raw_forecast_temp_min": 24.2,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 31.0,
+            "humidity": 88.0,
+            "cloud_cover": 98.0,
+            "rain_probability": 100.0,
+            "sunshine_duration_hours": 5.2,
+            "uv_index": 8.4,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.0
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.0
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.0
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.0
+                }
+            }
+        },
+        {
+            "date": "2026-08-19",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 33.7,
+            "raw_forecast_temp_min": 25.0,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 33.7,
+            "humidity": 77.0,
+            "cloud_cover": 93.0,
+            "rain_probability": 71.0,
+            "sunshine_duration_hours": 10.8,
+            "uv_index": 7.8,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.7
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.7
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.7
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 33.7
+                }
+            }
+        },
+        {
+            "date": "2026-08-20",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 31.0,
+            "raw_forecast_temp_min": 25.8,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 31.0,
+            "humidity": 83.0,
+            "cloud_cover": 96.0,
+            "rain_probability": 92.0,
+            "sunshine_duration_hours": 10.3,
+            "uv_index": 6.4,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.0
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.0
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.0
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.0
+                }
+            }
+        },
+        {
+            "date": "2026-08-21",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 30.7,
+            "raw_forecast_temp_min": 25.3,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 30.7,
+            "humidity": 83.0,
+            "cloud_cover": 96.0,
+            "rain_probability": 84.0,
+            "sunshine_duration_hours": 10.7,
+            "uv_index": 5.8,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 30.7
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 30.7
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 30.7
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 30.7
+                }
+            }
+        },
+        {
+            "date": "2026-08-22",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 32.2,
+            "raw_forecast_temp_min": 25.0,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 32.2,
+            "humidity": 86.0,
+            "cloud_cover": 83.0,
+            "rain_probability": 94.0,
+            "sunshine_duration_hours": 10.5,
+            "uv_index": 6.0,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.2
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.2
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.2
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.2
+                }
+            }
+        },
+        {
+            "date": "2026-08-23",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 31.3,
+            "raw_forecast_temp_min": 25.4,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 31.3,
+            "humidity": 86.0,
+            "cloud_cover": 100.0,
+            "rain_probability": 100.0,
+            "sunshine_duration_hours": 7.2,
+            "uv_index": 9.1,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.3
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.3
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.3
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.3
+                }
+            }
+        },
+        {
+            "date": "2026-08-24",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 27.8,
+            "raw_forecast_temp_min": 25.0,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 27.8,
+            "humidity": 91.0,
+            "cloud_cover": 98.0,
+            "rain_probability": 97.0,
+            "sunshine_duration_hours": 11.6,
+            "uv_index": 4.7,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 27.8
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 27.8
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 27.8
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 27.8
+                }
+            }
+        },
+        {
+            "date": "2026-08-25",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 28.4,
+            "raw_forecast_temp_min": 25.0,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 28.4,
+            "humidity": 90.0,
+            "cloud_cover": 96.0,
+            "rain_probability": 100.0,
+            "sunshine_duration_hours": 7.0,
+            "uv_index": 4.0,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 28.4
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 28.4
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 28.4
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 28.4
+                }
+            }
+        },
+        {
+            "date": "2026-08-26",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 31.1,
+            "raw_forecast_temp_min": 24.9,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 31.1,
+            "humidity": 89.0,
+            "cloud_cover": 100.0,
+            "rain_probability": 98.0,
+            "sunshine_duration_hours": 7.5,
+            "uv_index": 4.5,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.1
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.1
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.1
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.1
+                }
+            }
+        },
+        {
+            "date": "2026-08-27",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 31.9,
+            "raw_forecast_temp_min": 24.9,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 31.9,
+            "humidity": 88.0,
+            "cloud_cover": 85.0,
+            "rain_probability": 100.0,
+            "sunshine_duration_hours": 11.8,
+            "uv_index": 1.4,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.9
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.9
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.9
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.9
+                }
+            }
+        },
+        {
+            "date": "2026-08-28",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 26.4,
+            "raw_forecast_temp_min": 25.0,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 26.4,
+            "humidity": 95.0,
+            "cloud_cover": 86.0,
+            "rain_probability": 98.0,
+            "sunshine_duration_hours": 9.2,
+            "uv_index": 5.5,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 26.4
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 26.4
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 26.4
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 26.4
+                }
+            }
+        },
+        {
+            "date": "2026-08-29",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 32.1,
+            "raw_forecast_temp_min": 25.1,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 32.1,
+            "humidity": 86.0,
+            "cloud_cover": 67.0,
+            "rain_probability": 100.0,
+            "sunshine_duration_hours": 10.2,
+            "uv_index": 7.2,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.1
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.1
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.1
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 32.1
+                }
+            }
+        },
+        {
+            "date": "2026-08-30",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 31.9,
+            "raw_forecast_temp_min": 25.4,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 31.9,
+            "humidity": 85.0,
+            "cloud_cover": 95.0,
+            "rain_probability": 95.0,
+            "sunshine_duration_hours": 7.0,
+            "uv_index": 5.0,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.9
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.9
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.9
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 31.9
+                }
+            }
+        },
+        {
+            "date": "2026-08-31",
+            "city": "Ho Chi Minh City",
+            "raw_forecast_temp_max": 29.6,
+            "raw_forecast_temp_min": 25.0,
+            "predicted_bias": 0.0,
+            "corrected_temp_max": 29.6,
+            "humidity": 84.0,
+            "cloud_cover": 100.0,
+            "rain_probability": 72.0,
+            "sunshine_duration_hours": 7.0,
+            "uv_index": 6.5,
+            "will_rain": true,
+            "rain_status": "Có mưa",
+            "models": {
+                "xgboost": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 29.6
+                },
+                "lightgbm": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 29.6
+                },
+                "random_forest": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 29.6
+                },
+                "linear_regression": {
+                    "predicted_bias": 0.0,
+                    "corrected_temp_max": 29.6
+                }
+            }
+        }
+    ]
+}

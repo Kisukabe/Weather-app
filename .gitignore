@@ -19,16 +19,31 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+.pytest_cache/
+.coverage
+htmlcov/
 
 # Virtual Environment
 venv/
 ENV/
 env/
-.venv
+.venv/
 
-# Logs & Artifacts
+# Node.js & Frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+dist/
+.npm/
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# Logs & SQLite DB
 logs/
-artifacts/
+artifacts/weather_history.db*
 *.log
 
 # OS & IDE
@@ -39,10 +54,6 @@ artifacts/
 # Binaries / Installers
 *.sh
 
-# AI Agent & Architecture Docs / Setup (Ignored from git commits)
-.agents/
-ARCHITECTURE_EXPLANATION.md
-SYSTEM_ARCHITECTURE.md
+# AI Agent Plans
 implementation_plan.md
 walkthrough.md
-setup.py
